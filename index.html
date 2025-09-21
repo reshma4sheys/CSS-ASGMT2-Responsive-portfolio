@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Portfolio with CSS</title>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Header -Navigation Links -->
+            <header>
+                <nav>
+                    <h2><a href="#About">About</a></h2>
+                    <h2><a href="#Projects">Projects</a></h2>
+                    <h2><a href="#Contact">Contact</a></h2>
+                </nav>
+            </header>
+        </div>
+        <!-- Personal Details -->
+
+
+        
+        <div class="details" id="About">
+            <div class="pic-container">
+                <div id="pic">
+                    <img src="/Images/portfolio-Image.jpg" alt="Profile photo">
+                </div>
+            </div>
+            <div id="About">
+                <h4> Hello, I'm </h4>
+                <h1>James Smith</h1>
+                <h5>A CREATIVE DESIGNER from Newyork.</h5>
+                <P> <br>I am a creative designer based in Newyork and I'm very passionate
+                    <br>and dedicated to my work. I have 10+ years of experience,collaborating
+                    <br> with various companies and startups.
+                </P>
+                <p>
+                    <br>I specialize in UX research, AI-driven design and enjoy merging cutting-edge technology
+                    <br> with human-centered principles to build seamless digital products.
+                    <br>My approach is rooted in understanding user needs to create impactful experiences
+                    <br> I'm always looking for opportunities to collaborate and bring innovative ideas to life.
+                    <br>View my work to see how I can help your next project, or get in touch to discuss how we can
+                    <br> create something amazing together.
+                </p>
+            </div>
+        </div>
+        <!-- Projects -->
+        <div class="projects-details" id="Projects">
+            <div>
+                <h1 style="justify-content: center;  font-weight:bold;">Projects</h1>
+            </div>
+            <!-- Project 1 Details -->
+            <div class="project1">
+                <div id="Project1-details">
+                    <h1>Eazy Card</h1>
+                    <br>
+                    <h2>Credit-Card-Application Developed for a Bank In UAE</h2>
+                    <br>
+                    <p>Allows users to manage their credit card accounts, view transactions,
+                        make payments,
+                        <br>
+                        track spending, and set up alerts, all from their mobile devices.
+                    </p>
+
+                </div>
+                <div id="Project1-pic">
+                    <img src="Images/card.jpg" alt="Image of Mobile Applicatioon">
+                </div>
+            </div>
+            <!-- Project 2 Details -->
+            <div class="project2">
+                <div id="Project2-details">
+                    <h1>Chat Bot</h1>
+                    <br>
+                    <h2>Chat Application Developed for client</h2>
+                    <br>
+                    <p>Designed a Chat Application for a Client fo the customer service team
+                        <br>
+                        to speak with customers on Live Chat !
+                    </p>
+
+                </div>
+                <div id="Project2-pic">
+                    <img src="Images/chat.png" alt="Image of Chat Applicatioon">
+                </div>
+            </div>
+        </div>
+        <!-- fORM -->
+        <div id="form">
+
+            <div id="Contact">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div id="contact-form">
+                <form action="#">
+                    <!-- Name -->
+                    <div>
+                        <label for="name">Name:</label>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="text" id="name" placeholder="Your Name" required minlength="3" maxlength="25"
+                            style="border-radius:5px;">
+                    </div>
+
+                    <br>
+                    <!-- Email -->
+                    <div>
+                        <label for="email">Email:</label>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="email" name="email" id="email" style="border-radius:5px;">
+                    </div>
+                    <br>
+
+                    <!-- Phone number format:123-456-7890 -->
+                    <div>
+                        <label for="Phone">Phone:</label>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="tel" name="Phone" id="Phone" required pattern="\d{3}-\d{3}-\d{4}"
+                            placeholder="123-456-7890" style="border-radius:5px;">
+                    </div>
+                    <br>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea type="text" id="message" placeholder="Message" minlength="3" maxlength="100"
+                            style="border-radius:5px;"></textarea>
+                    </div>
+                    <br><br>
+
+                    <!-- Submit and Reset -->
+                    <div id="Button">
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button
+                            type="submit">&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset">&nbsp;&nbsp;&nbsp;Cancel&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
