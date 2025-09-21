@@ -59,6 +59,7 @@ font-size: 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
 }
 #pic img{
    width: 100%;
@@ -216,40 +217,101 @@ a:hover {
 
 @media(min-width: 1025px) {
   body {
-    max-width: 1200px; /* Example fixed max-width for larger screens */
-    width: 80%;
+   max-width: none;
+    padding: 0 10px; 
   }
 }
 @media(min-width: 769px) and (max-width: 1024px)   {
   body {
-   max-width: none; /* Remove any max-width constraint */
+   max-width: none; 
     padding: 0 10px;
   }
+  .pic-container{
+    margin-right:2rem;
+  }
+  #Project1-pic img{
+    width: 300px;
+    height: 300px;
+
+}
+#Project1-details{
+    font-size: 18px;
+} 
+#Project1-details h1{
+  font-size: 28px;
+}
+#Project1-details h2{
+  font-size: 23px;
+}
+
+#Project2-pic img{
+    width: 300px;
+    height: 300px;
+
+}
+#Project2-details{
+    font-size: 18px;
+} 
+#Project2-details h1{
+  font-size: 28px;
+}
+#Project2-details h2{
+  font-size: 23px;
+}
+
 }
 @media(max-width: 768px) {
+  
   body {
     .container{
-      width: 100%; /* Make the container full width */
-    max-width: none; /* Remove any max-width constraint */
-    padding:10px; /* Adjust padding for smaller screens */
+      width: 100%;
+    max-width: none; 
+    padding:10px; 
+    }  
+  }
+.hamburger{
+  display: block;
+}
+    #About h1{
+    font-size:22px;
+    }
+     #About h5{
+    font-size:15px;
+    }
+     #About p{
+    font-size:15px;
     }
 
-    header nav{
-      flex-direction: column;
-      align-items: center;
-    }
-    .pic-container{
-      text-align: center;
-    }
-    #About{
-      text-align: center;
-    }
-    .details{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+  .pic-container{
+    margin-right:2rem;
   }
+  #Project1-pic img{
+    width: 200px;
+    height: 200px;
+
+}
+#Project1-details{
+    font-size: 14px;
+} 
+#Project1-details h1{
+  font-size: 26 px;
+}
+#Project1-details h2{
+  font-size: 20px;
+}
+
+#Project2-pic img{
+    width: 200px;
+    height: 200px;
+
+}
+#Project2-details{
+    font-size: 14px;
+} 
+#Project2-details h1{
+  font-size: 26px;
+}
+#Project2-details h2{
+  font-size: 20px;
+}
 } 
